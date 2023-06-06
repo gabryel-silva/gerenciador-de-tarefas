@@ -1,0 +1,206 @@
+body {
+    background-color: var(--cor-1);
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    animation-name: motion-transition-fade;
+    animation-duration: .75s;
+    animation-timing-function: ease-in-out;
+}
+
+form input:focus{
+    touch-action: manipulation;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/*DEFINE TIPO DE TEXTO*/
+.title {
+    color: var(--cor-4);
+    font-weight: var(--bold);
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.subtitle {
+    color: var(--cor-4);
+    font-weight: var(--semiBold);
+    font-size: 24px;
+}
+
+.text {
+    color: var(--cor-4);
+    font-weight: var(--regular);
+    line-height: 27px;
+    font-size: 16px;
+}
+
+.textStronge {
+    color: var(--cor-4);
+    font-weight: var(--bold);
+    line-height: 27px;
+    font-size: 16px;
+}
+
+.text__link {
+    color: var(--cor-3);
+    font-weight: var(--Bold);
+    line-height: 27px;
+    font-size: 20px;
+}
+
+/*DEFINE ESTILOS DE TEXTOS*/
+.tx-dec-disabled {
+    text-decoration: none;
+}
+
+.tx-dec-able {
+    text-decoration: underline;
+}
+
+/*DEFINE EFEITOS DE TEXTOS*/
+.gradient-title {
+    background: -webkit-linear-gradient(100deg, var(--cor-2), var(--cor-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-subtitle {
+    background: -webkit-linear-gradient(180deg, var(--cor-2), var(--cor-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*DEFINE CORES DE FONTES*/
+.c-cyan-300 {
+    color: var(--cor-1);
+}
+
+.c-orange-600 {
+    color: var(--cor-2);
+}
+
+.c-orange-800 {
+    color: var(--cor-3);
+}
+
+.c-white-900 {
+    color: var(--cor-4);
+}
+
+/*DEFINE CORES DE FOUNDO*/
+.bg-cyan-300 {
+    background-color: var(--cor-1);
+}
+
+.bg-orange-600 {
+    background-color: var(--cor-2);
+}
+
+.bg-orange-800 {
+    background-color: var(--cor-3);
+}
+
+.bg-white-900 {
+    background-color: var(--cor-4);
+}
+
+/*DEFINE MARGIN TOP*/
+.p-top {
+    padding-top: 10rem;
+}
+
+/*DEFINE CONTAINERS*/
+.container-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*DEFINE COLUNAS*/
+.col-left {
+    width: 50%;
+}
+
+.col-right {
+    width: 50%;
+}
+
+/*link ativo*/
+.link-active {
+    color: var(--cor-3);
+}
+
+.link-active__mobile{
+    background-color: rgba(2, 84, 100, 0.05);
+    border-left: 5px solid var(--cor-2);
+}
+
+/*DEFINE OPACIDADE*/
+.opacity-30 {
+    opacity: 30%;
+}
+
+.opacity-50 {
+    opacity: 50%;
+}
+
+.opacity-80 {
+    opacity: 80%;
+}
+/*DEFINE ONDE O BLOCO QUE APARECE*/
+.d-able{
+    display: block !important;
+}
+/*DEFINE O BLOCO QUE DESAPARECE INDEPENDENTE DO TAMANHO DA TELA*/
+.d-disabled{
+    display: none;
+}
+/*DEFINE FIELDSET*/
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+/*DEFINE MENSAGEM DE AVISO*/
+.message-warning{
+    font-size: 14px;
+    font-weight: var(--light);
+}
+/*DEFINE CONTAINER COM QUEBRA AO UTRAPASSAR O TAMNHO DEFINIDO*/
+.container-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*DEFINE O BLOCO QUE DESAPARECERÁ NO DEPENDENDO DO TAMANHO DA TELA*/
+@media screen and (max-width: 1024px) {
+    .d-none-max-1024 {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .d-none-min-1024 {
+        display: none;
+    }
+}
+@media screen and (max-width: 744px) {
+    .d-none-max-744{
+        display: none;
+    }
+}
+@media screen and (min-width: 744px) {
+    .d-none-min-744{
+        display: none;
+    }
+}

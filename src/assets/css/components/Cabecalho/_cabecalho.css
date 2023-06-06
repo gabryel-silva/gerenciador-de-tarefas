@@ -1,0 +1,82 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+}
+
+nav{
+    padding: 2rem 10%;
+}
+
+header a{
+    text-decoration: none;
+    padding: .5rem;
+}
+
+header nav:nth-child(1) a{
+    margin-right: 2rem;
+}
+
+header nav:nth-child(3) a{
+    margin-left: 2rem;
+}
+
+header nav a:hover{
+    animation-name: transition-link;
+    animation-duration: .30s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+header button{
+    background-color: transparent;
+    border: none;
+}
+
+@keyframes transition-link{
+    from{
+        border-top: 3px solid rgba(226,124,35,0);
+        padding-top: 0;
+    }
+    to{
+        padding-top: .5rem;
+        border-top: 3px solid rgba(226,124,35,100);
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .desktop{
+        display: none;
+    }
+
+    .btn-menu{
+        background-color: transparent;
+        border: none;
+    }
+    .dropdown{
+        position: fixed;
+        top: 5rem;
+        left: 10%;
+        background-color: var(--cor-4);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown .container-col{
+        padding: 1rem 4rem 1rem 0;
+        align-items: start;
+        width: 100%;
+    }
+    .dropdown a{
+        padding: .5rem 100% .5rem 2rem;
+    }
+}
+@media screen and (max-width: 744px) {
+    .dropdown{
+        width: calc(100% - 8rem);   
+    }
+}

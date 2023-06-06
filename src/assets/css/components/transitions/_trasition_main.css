@@ -1,0 +1,9 @@
+@keyframes motion-transition-fade{
+    from{
+        transform: translateX(-50rem);
+        opacity: 0%;
+    }to{
+        transform: translateX(inherit);
+        opacity: 100%;
+    }
+}

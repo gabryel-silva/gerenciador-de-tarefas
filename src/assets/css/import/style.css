@@ -1,0 +1,12 @@
+@import url('../base/_reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('../theme/_variaveis.css');
+@import url('../base/_base.css');
+@import url('../components/Cabecalho/_cabecalho.css');
+@import url('../components/Efeitos/_effect-to-fade.css');
+@import url('../components/Style_pages/_index.css');
+@import url('../components/Botoes/_btn-padrao.css');
+@import url('../components/Footer/_footer.css');
+@import url('../components/Style_pages/_sign-up.css');
+@import url('../components/transitions/_trasition_main.css');
+@import url('../components/Modal/_entrar_modal.css');

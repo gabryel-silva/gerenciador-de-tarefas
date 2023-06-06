@@ -1,0 +1,10 @@
+.btn-padrao{
+    width: 100%;
+    padding: .5rem 0;
+    border-radius: 100px;
+    text-align: center;
+    border: none;
+}
+.btn-padrao:hover{
+    opacity: 90%;
+}

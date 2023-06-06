@@ -1,0 +1,57 @@
+.login-modal figure{
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+    width: calc(100vw - 1.2rem);
+    position: fixed;
+    z-index: 2;
+}
+.login-modal figure > div{
+    width: 35%;
+    background-color: rgba(255,255,255,90%);
+    margin: 7rem auto;
+    border-radius: 20px;
+}
+.login-modal figure > div > div{
+    padding: 1.5rem;
+}
+
+.login-modal figure > div > div button:nth-child(1){
+    border-radius: 5px;
+    border: none;
+}
+
+.login-modal figure > div > div button:nth-child(1):hover{
+    opacity: 90%;
+    margin-top: .1rem;
+}
+
+.login-modal p{
+    margin: 1rem 0;
+}
+
+.login-modal fieldset{
+    margin-bottom: 1rem;
+}
+
+.login-modal p:nth-child(5){
+    text-align: center;
+}
+
+.login-modal input{
+    padding: .75rem;
+    background-color: transparent;
+    border: 2px solid var(--cor-2);
+    border-radius: 100px;
+}
+
+.login-modal input::placeholder{
+    color: var(--cor-3);
+}
+
+.login-modal input:focus{
+    border: 3px solid var(--cor-3);
+}
+
+.login-modal input:focus-visible{
+    outline: none;
+}

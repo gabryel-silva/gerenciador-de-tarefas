@@ -1,0 +1,12 @@
+:root{
+    /*DEFINIÇÃO DA PALETA DE CORES*/
+    --cor-1: #025464;
+    --cor-2: #E57C23;
+    --cor-3: #E8AA42;
+    --cor-4: #F8F1F1;
+    /*ESPESSURA FONTE*/
+    --light: 300;
+    --regular: 400;
+    --semiBold: 600;
+    --bold: 700;
+}
